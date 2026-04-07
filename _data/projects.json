@@ -5,19 +5,48 @@
       "name": "Rocky Mountain Metro Airport",
       "subtitle": "Click to Learn More",
       "image": "images/rmm.jpg",
-      "link": "project-rma"
+      "link": "project-rma",
+      "detailTitle": "Rocky Mountain Metropolitan Airport | Avigilon",
+      "detailDescription": "Located in Broomfield, Colorado, the Rocky Mountain Metropolitan Airport has grown exponentially since it's first flight in 1960 to become one of the busiest centers in Colorado. Operating under the values of safe and efficient service, Rocky Mountain Metro has won numerous awards and national recognition for safety.",
+      "solutionHeading": "FTS Solution",
+      "solutionDescription": "To strengthen safety and comply with government regulations, Rocky Mountain Metro, in partnership with Fire Team Security, adopted a range of Avigilon high-definition cameras to meet various surveillance needs throughout the airport. Fire Team Security installed high-resolution Avigilon cameras and deployed Avigilon Control Center (ACC) video management software to streamline its video monitoring and management processes.\n\nAvigilon H4 8 and 5mp cameras were installed wirelessly through Ubiquiti to capture and transport video from over a 3/4 of a mile away. With self-learning video analytics, these cameras helped to secure their most remote locations. Avigilon H4 cameras were selected for their ability to cover long distances while allowing operators to zoom in with detail to identify and quickly respond to potential security events.",
+      "resultsHeading": "Results That Matter",
+      "resultsDescription": "Before installing a complete security solution, Rocky Mountain Metro had a legacy security system with legacy IP cameras. This made it difficult to secure their remote locations due to the resolution of that equipment. With Fire Team's expertise, we were able to secure locations that previously were unmonitored due to distance. By utilizing our engineering team we were able to design a solution to reach Rocky Mountain Metro's security objectives.",
+      "tags": ["CCTV", "Airport", "Avigilon"],
+      "hardware": [
+        { "name": "5MP Outdoor Bullet with WDR", "brand": "Avigilon", "url": "https://www.avigilon.com/products/cameras-sensors/h4a" },
+        { "name": "Ubiquiti NanoBeam", "brand": "Ubiquiti", "url": "https://www.ui.com/airmax/nanobeam-ac-gen2/" },
+        { "name": "ACC 6 VMS", "brand": "Avigilon", "url": "https://www.avigilon.com/support/software/acc6/" },
+        { "name": "8MP Outdoor Bullet with IR", "brand": "Avigilon", "url": "https://www.avigilon.com/products/cameras-sensors/h4a" }
+      ]
     },
     {
       "name": "Grand Junction FCU",
       "subtitle": "Case Study Coming Soon",
       "image": "images/gj3.png",
-      "link": ""
+      "link": "",
+      "detailTitle": "",
+      "detailDescription": "",
+      "solutionHeading": "",
+      "solutionDescription": "",
+      "resultsHeading": "",
+      "resultsDescription": "",
+      "tags": [],
+      "hardware": []
     },
     {
       "name": "Western Slope Auto",
       "subtitle": "Case Study Coming Soon",
       "image": "images/ws.jpg",
-      "link": ""
+      "link": "",
+      "detailTitle": "",
+      "detailDescription": "",
+      "solutionHeading": "",
+      "solutionDescription": "",
+      "resultsHeading": "",
+      "resultsDescription": "",
+      "tags": [],
+      "hardware": []
     }
   ]
 }

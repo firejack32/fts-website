@@ -175,6 +175,25 @@ collections:
             widget: "list"
             fields:
               - { label: "Project Name", name: "name", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Link (leave empty if no page)", name: "link", widget: "string", required: false }
+              - { label: "Card Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image" }
+              - { label: "Link Slug (e.g. project-rma)", name: "link", widget: "string", required: false }
+              - { label: "Detail Page Title", name: "detailTitle", widget: "string", required: false }
+              - { label: "Project Description", name: "detailDescription", widget: "text", required: false }
+              - { label: "Solution Heading", name: "solutionHeading", widget: "string", required: false }
+              - { label: "Solution Description", name: "solutionDescription", widget: "text", required: false }
+              - { label: "Results Heading", name: "resultsHeading", widget: "string", required: false }
+              - { label: "Results Description", name: "resultsDescription", widget: "text", required: false }
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                required: false
+                field: { label: "Tag", name: "tag", widget: "string" }
+              - label: "Hardware List"
+                name: "hardware"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Product Name", name: "name", widget: "string" }
+                  - { label: "Brand", name: "brand", widget: "string" }
+                  - { label: "Product URL", name: "url", widget: "string", required: false }
