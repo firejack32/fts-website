@@ -23,14 +23,14 @@
   "partnershipsHeading": "Partnerships",
   "partnershipsIntro": "Here are a few of our partnerships with industry leading security manufacturers.",
   "partners": [
-    { "name": "Avigilon", "description": "Video Surveillance | Access Control | VMS", "url": "https://www.avigilon.com/", "image": "images/avo.png" },
-    { "name": "Salto", "description": "Access Control", "url": "https://saltosystems.com/en/", "image": "images/salto.png" },
-    { "name": "Open Path", "description": "Access Control", "url": "https://www.avigilon.com/access-control/credentials", "image": "images/open.png" },
-    { "name": "Siemens", "description": "Fire Safety Systems", "url": "https://new.siemens.com/us/en/products/buildingtechnologies/fire-safety.html", "image": "images/sie.png" },
-    { "name": "Silent Knight", "description": "Fire Safety Systems", "url": "https://www.silentknight.com/", "image": "images/sil.png" },
-    { "name": "AES", "description": "Fire Safety Systems", "url": "https://aes-corp.com/", "image": "images/aes.png" },
-    { "name": "DMP", "description": "Intrusion and Detection Systems", "url": "https://dmp.com/", "image": "images/dmp.png" },
-    { "name": "Acre Security", "description": "Access Control Systems", "url": "https://www.acresecurity.com/", "image": "images/acr.png" },
-    { "name": "Bosch", "description": "Intrusion and Detection Systems", "url": "https://www.boschsecurity.com/us/en/", "image": "images/bos.png" }
+    { "name": "Avigilon", "description": "Video Surveillance | Access Control | VMS", "url": "https://www.avigilon.com/", "image": "/images/avo.png" },
+    { "name": "Salto", "description": "Access Control", "url": "https://saltosystems.com/en/", "image": "/images/salto.png" },
+    { "name": "Open Path", "description": "Access Control", "url": "https://www.avigilon.com/access-control/credentials", "image": "/images/open.png" },
+    { "name": "Siemens", "description": "Fire Safety Systems", "url": "https://new.siemens.com/us/en/products/buildingtechnologies/fire-safety.html", "image": "/images/sie.png" },
+    { "name": "Silent Knight", "description": "Fire Safety Systems", "url": "https://www.silentknight.com/", "image": "/images/sil.png" },
+    { "name": "AES", "description": "Fire Safety Systems", "url": "https://aes-corp.com/", "image": "/images/aes.png" },
+    { "name": "DMP", "description": "Intrusion and Detection Systems", "url": "https://dmp.com/", "image": "/images/dmp.png" },
+    { "name": "Acre Security", "description": "Access Control Systems", "url": "https://www.acresecurity.com/", "image": "/images/acr.png" },
+    { "name": "Bosch", "description": "Intrusion and Detection Systems", "url": "https://www.boschsecurity.com/us/en/", "image": "/images/bos.png" }
   ]
 }

@@ -4,7 +4,7 @@
     {
       "name": "Rocky Mountain Metro Airport",
       "subtitle": "Click to Learn More",
-      "image": "images/rmm.jpg",
+      "image": "/images/rmm.jpg",
       "link": "project-rma",
       "detailTitle": "Rocky Mountain Metropolitan Airport | Avigilon",
       "detailDescription": "Located in Broomfield, Colorado, the Rocky Mountain Metropolitan Airport has grown exponentially since it's first flight in 1960 to become one of the busiest centers in Colorado. Operating under the values of safe and efficient service, Rocky Mountain Metro has won numerous awards and national recognition for safety.",
@@ -23,7 +23,7 @@
     {
       "name": "Grand Junction FCU",
       "subtitle": "Case Study Coming Soon",
-      "image": "images/gj3.png",
+      "image": "/images/gj3.png",
       "link": "",
       "detailTitle": "",
       "detailDescription": "",
@@ -37,7 +37,7 @@
     {
       "name": "Western Slope Auto",
       "subtitle": "Case Study Coming Soon",
-      "image": "images/ws.jpg",
+      "image": "/images/ws.jpg",
       "link": "",
       "detailTitle": "",
       "detailDescription": "",

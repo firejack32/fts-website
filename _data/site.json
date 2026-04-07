@@ -14,28 +14,28 @@
         "subtitle": "",
         "buttonText": "Learn More",
         "buttonLink": "https://www.avigilon.com/analytics",
-        "backgroundImage": "images/sd.jpg"
+        "backgroundImage": "/images/sd.jpg"
       },
       {
         "title": "Record. Respond. Protect.",
         "subtitle": "",
         "buttonText": "Learn More",
         "buttonLink": "https://assets.avigilon.com/file_library/pdf/integrations/Motorola%20Solutions%20VT100%20Brochure.pdf",
-        "backgroundImage": "images/bc.png"
+        "backgroundImage": "/images/bc.png"
       },
       {
         "title": "Experts in Commercial Security and Fire Systems",
         "subtitle": "Welcome to Fire Team Security",
         "buttonText": "Our Services",
         "buttonLink": "services",
-        "backgroundImage": "images/bg_2.jpg"
+        "backgroundImage": "/images/bg_2.jpg"
       },
       {
         "title": "Protecting our Customers",
         "subtitle": "Don't settle for less",
         "buttonText": "Our Services",
         "buttonLink": "services",
-        "backgroundImage": "images/lens1.jpeg"
+        "backgroundImage": "/images/lens1.jpeg"
       }
     ],
     "aboutSection": {

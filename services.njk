@@ -83,7 +83,7 @@ activePage: services
       <div class="row">
         {% for partner in services.partners %}
         <div class="col-md-4">
-          <div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(/{{ partner.image }});">
+          <div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({{ partner.image }});">
             <div class="overlay"></div>
             <a href="{{ partner.url }}" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
             <div class="text text-center p-4">

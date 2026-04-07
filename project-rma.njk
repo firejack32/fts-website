@@ -23,7 +23,7 @@ activePage: projects
     <div class="row">
       <h2 class="mb-3">{{ project.detailTitle }}</h2>
       <p>{{ project.detailDescription }}<br><br>
-      <img src="/{{ project.image }}" class="img-fluid">
+      <img src="{{ project.image }}" class="img-fluid">
       </p>
       <p><h2 class="mb-4">{{ project.solutionHeading }}</h2> {{ project.solutionDescription | replace("\n\n", "</p><p>") | safe }}</p>
       <p><h2 class="mb-4">{{ project.resultsHeading }}</h2>{{ project.resultsDescription }}</p>

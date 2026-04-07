@@ -21,7 +21,7 @@ activePage: projects
     <div class="row">
       {% for project in projects.projects %}
       <div class="col-md-4">
-        <div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(/{{ project.image }});">
+        <div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({{ project.image }});">
           <div class="overlay"></div>
           <a href="{% if project.link %}/{{ project.link }}/{% else %}#{% endif %}" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
           <div class="text text-center p-4">
