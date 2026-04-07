@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: Contact
+activePage: contact
+---
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">{{ contact.heroTitle }}</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section contact-section">
+  <div class="container">
+    <div class="row d-flex mb-5 contact-info justify-content-center">
+      <div class="col-md-8">
+        <div class="row mb-5">
+          <div class="col-md-4 text-center py-4">
+            <div class="icon">
+              <span class="icon-map-o"></span>
+            </div>
+            <p><span>Address</span></p>
+            <span class="icon icon-map-marker"></span><span class="text">{{ contact.address1 }}</span>
+            <br><br>
+            <span class="icon icon-map-marker"></span><span class="text">{{ contact.address2 }}</span>
+          </div>
+          <div class="col-md-4 text-center border-height py-4">
+            <div class="icon">
+              <span class="icon-mobile-phone"></span>
+            </div>
+            <p><span>Business Hours</span> <a href="tel://{{ contact.businessPhone }}">{{ contact.businessPhone }}</a></p>
+            <p><span>After Hours</span> <a href="tel://{{ contact.afterHoursPhone }}">{{ contact.afterHoursPhone }}</a></p>
+          </div>
+          <div class="col-md-4 text-center py-4">
+            <div class="icon">
+              <span class="icon-envelope-o"></span>
+            </div>
+            <p><span>Email</span> <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row block-9 justify-content-center mb-5">
+      <div class="col-md-8 mb-md-5">
+        <h2 class="text-center">{{ contact.formHeading }}</h2>
+        <div class="form-group">
+          <p align="center"><a href="mailto:{{ contact.formEmail }}"><input type="submit" value="Send Message" class="btn btn-primary py-3 px-5"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

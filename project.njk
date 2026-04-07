@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Projects
+activePage: projects
+---
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">{{ projects.heroTitle }}</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Projects <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      {% for project in projects.projects %}
+      <div class="col-md-4">
+        <div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(/{{ project.image }});">
+          <div class="overlay"></div>
+          <a href="{% if project.link %}/{{ project.link }}/{% else %}#{% endif %}" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+          <div class="text text-center p-4">
+            <h3><a href="{% if project.link %}/{{ project.link }}/{% else %}#{% endif %}">{{ project.name }}</a></h3>
+            <span>{{ project.subtitle }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

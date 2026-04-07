@@ -1,0 +1,90 @@
+---
+layout: base.njk
+title: About
+activePage: about
+---
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">{{ about.heroTitle }}</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-5 order-md-last wrap-about align-items-stretch">
+        <div class="wrap-about-border">
+          <div class="img" style="background-image: url(/images/logo.png); border"></div>
+          <div class="text">
+            <h3 align="center">Get a Site Evaluation</h3>
+            <p></p>
+            <p align="center"><a href="/contact/" class="btn btn-primary py-3 px-4">Contact us</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 wrap-about pr-md-4 ftco-animate">
+        <h2 class="mb-4">{{ about.welcomeHeading }}</h2>
+        <p>{{ about.welcomeParagraph1 }}</p>
+        <p>{{ about.welcomeParagraph2 }}</p>
+        <p>{{ about.welcomeParagraph3 }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-counter">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2 d-flex">
+      <div class="col-md-6 align-items-stretch d-flex">
+        <div class="img img-video d-flex align-items-center" style="background-image: url(/images/consulting.jpg);">
+          <div class="video justify-content-center">
+            <span class="ion-ios-play"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5">
+        <h2 class="mb-4">{{ about.integratorHeading }}</h2>
+        <p>{{ about.integratorDescription }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-intro ftco-no-pb img" style="background-image: url(/images/bg_3.jpg);">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
+        <h2 class="mb-0">{{ about.bannerText }}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-counter" id="section-counter">
+  <div class="container">
+    <div class="row d-md-flex align-items-center justify-content-center">
+      <div class="wrapper">
+        <div class="row d-md-flex align-items-center">
+          {% for stat in site.homepage.stats %}
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="icon"><span class="flaticon-doctor"></span></div>
+              <div class="text">
+                <strong class="number" data-number="{{ stat.number }}">0</strong>
+                <span>{{ stat.label }}</span>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

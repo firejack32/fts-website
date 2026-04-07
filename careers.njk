@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: Careers
+activePage: careers
+---
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">{{ careers.heroTitle }}</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Careers <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row">
+      {% for job in careers.jobs %}
+      <div class="col-md-6 col-lg-4 ftco-animate">
+        <div class="blog-entry">
+          <a href="{{ job.applicationUrl }}" class="block-20 d-flex align-items-end" style="background-image: url('/{{ job.image }}');">
+            <div class="meta-date text-center p-2">
+              <span class="mos">{{ job.postedMonth }}</span>
+              <span class="day">{{ job.postedDay }}</span>
+              <span class="yr">{{ job.postedYear }}</span>
+            </div>
+          </a>
+          <div class="text bg-white p-4">
+            <h3 class="heading"><a href="{{ job.applicationUrl }}">{{ job.title }}</a></h3>
+            <p>{{ job.description }}</p>
+            <div class="d-flex align-items-center mt-4">
+              <p class="mb-0"><a href="{{ job.applicationUrl }}" class="btn btn-primary">{{ job.buttonText }}</a></p>
+              <p class="ml-auto mb-0">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

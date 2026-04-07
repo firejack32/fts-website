@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Financing
+activePage: finance
+---
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">{{ finance.heroTitle }}</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Financing <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-5 order-md-last wrap-about align-items-stretch">
+        <div class="wrap-about-border">
+          <div class="img" style="background-image: url(/images/gaf.png); border"></div>
+          <div class="text">
+            <h3 align="center">{{ finance.partnerName }}</h3>
+            <p align="center">{{ finance.partnerDescription }}</p>
+            <p align="center"><a href="{{ finance.partnerButtonUrl }}" class="btn btn-primary py-3 px-4">{{ finance.partnerButtonText }}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 wrap-about pr-md-4 ftco-animate">
+        <h2 class="mb-4">{{ finance.mainHeading }}</h2>
+        <p>{{ finance.mainIntro }}</p>
+        <p>
+          <ul>
+            {% for benefit in finance.benefits %}
+            <li><strong>{{ benefit.title }}:</strong> {{ benefit.description }}</li>
+            {% endfor %}
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-counter">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2 d-flex">
+      <div class="col-md-6 align-items-stretch d-flex">
+        <div class="img img-video d-flex align-items-center" style="background-image: url(/images/gafs.jpg);">
+          <div class="video justify-content-center">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5">
+        <h2 class="mb-4">{{ finance.detailHeading }}</h2>
+        <p align="center">{{ finance.detailDescription }}</p>
+        <p align="center"><a href="mailto:{{ finance.detailButtonEmail }}?subject=Financing Options" class="btn btn-primary py-3 px-4">{{ finance.detailButtonText }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-intro ftco-no-pb img" style="background-image: url(/images/bg_2.jpg);">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
+        <h2 class="mb-0">{{ finance.bottomBannerText }}</h2>
+      </div>
+    </div>
+  </div>
+</section>

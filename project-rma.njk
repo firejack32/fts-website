@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: Rocky Mountain Metro Airport
+activePage: projects
+---
+
+{% set project = projects.projects[0] %}
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">{{ project.name }}</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="/project/">Projects <i class="ion-ios-arrow-forward"></i></a></span> <span>RMA <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <h2 class="mb-3">{{ project.detailTitle }}</h2>
+      <p>{{ project.detailDescription }}<br><br>
+      <img src="/{{ project.image }}" class="img-fluid">
+      </p>
+      <p><h2 class="mb-4">{{ project.solutionHeading }}</h2> {{ project.solutionDescription | replace("\n\n", "</p><p>") | safe }}</p>
+      <p><h2 class="mb-4">{{ project.resultsHeading }}</h2>{{ project.resultsDescription }}</p>
+      <div class="tag-widget post-tag-container mb-5 mt-5">
+        <div class="tagcloud">
+          {% for tag in project.tags %}
+          <a href="#" class="tag-cloud-link">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="sidebar-box ftco-animate">
+        <h3>Hardware List</h3>
+        <ul class="categories">
+          {% for item in project.hardware %}
+          <li><a href="{{ item.url }}">{{ item.name }}<span>{{ item.brand }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

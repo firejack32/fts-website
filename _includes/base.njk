@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FTS | {{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/icomoon.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157807057-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-157807057-1');
+    </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function(user) {
+          if (!user) {
+            window.netlifyIdentity.on("login", function() {
+              document.location.href = "/admin/";
+            });
+          } else {
+            var btn = document.createElement("a");
+            btn.href = "/admin/";
+            btn.textContent = "Edit Site";
+            btn.style.cssText = "position:fixed;bottom:20px;right:20px;z-index:99999;background:#00c7b7;color:#fff;padding:10px 20px;border-radius:6px;font-family:sans-serif;font-size:14px;font-weight:bold;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,0.3);";
+            document.body.appendChild(btn);
+          }
+        });
+      }
+    </script>
+
+    <div class="bg-top navbar-light">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+          <div class="col-md-4 d-flex align-items-center py-4">
+            <a class="navbar-brand" href="/">{{ site.company.name }}</a>
+          </div>
+          <div class="col-lg-8 d-block">
+            <div class="row d-flex">
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                <div class="text">
+                  <span>Email</span>
+                  <span>{{ site.company.email }}</span>
+                </div>
+              </div>
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                <div class="text">
+                  <span>Call</span>
+                  <span>{{ site.company.phone }}</span>
+                  <span>After Hours: {{ site.company.afterHoursPhone }}</span>
+                </div>
+              </div>
+              <div class="col-md topper d-flex align-items-center justify-content-end">
+                <p class="mb-0 d-block">
+                  <a href="mailto:{{ site.company.serviceRequestEmail }}?subject=Service Request" class="btn py-2 px-3 btn-primary">
+                    <span>Request Service</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item{% if activePage == 'home' %} active{% endif %}"><a href="/" class="nav-link pl-0">Home</a></li>
+            <li class="nav-item{% if activePage == 'about' %} active{% endif %}"><a href="/about/" class="nav-link">About</a></li>
+            <li class="nav-item{% if activePage == 'projects' %} active{% endif %}"><a href="/project/" class="nav-link">Projects</a></li>
+            <li class="nav-item{% if activePage == 'services' %} active{% endif %}"><a href="/services/" class="nav-link">Services</a></li>
+            <li class="nav-item{% if activePage == 'finance' %} active{% endif %}"><a href="/finance/" class="nav-link">Finance</a></li>
+            <li class="nav-item{% if activePage == 'contact' %} active{% endif %}"><a href="/contact/" class="nav-link">Contact</a></li>
+            <li class="nav-item{% if activePage == 'careers' %} active{% endif %}"><a href="/careers/" class="nav-link">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">2297 Tall Grass Drive Unit J, Grand Junction, CO 81505</span></li>
+                  <li><span class="icon icon-map-marker"></span><span class="text">8369 Southpark Lane, Suite B, CO 80120</span></li>
+                  <li><span class="icon icon-phone"></span><span class="text">Business Hours: ({{ site.company.phone }})</span></li>
+                  <li><span class="icon icon-phone"></span><span class="text">After Hours: ({{ site.company.afterHoursPhone }})</span></li>
+                  <li><a href="mailto:{{ site.company.email }}"><span class="icon icon-envelope"></span><span class="text">{{ site.company.email }}</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(/images/covid.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="/covid/">FTS Business Update</a></h3>
+                  <div class="meta">
+                    <div><span class="icon-calendar"></span> 4.17.20</div>
+                    <div><span class="icon-person"></span> Team FTS</div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(/images/camera1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="/blog/">Power of Video Surveillance</a></h3>
+                  <div class="meta">
+                    <div><span class="icon-calendar"></span> 1.29.20</div>
+                    <div><span class="icon-person"></span> Team FTS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                <li><a href="/about/"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+                <li><a href="/project/"><span class="ion-ios-arrow-round-forward mr-2"></span>Projects</a></li>
+                <li><a href="/services/"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a></li>
+                <li><a href="/finance/"><span class="ion-ios-arrow-round-forward mr-2"></span>Finance</a></li>
+                <li><a href="/contact/"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
+                <li><a href="/careers/"><span class="ion-ios-arrow-round-forward mr-2"></span>Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="https://linkedin.com/company/fireteamsecurity"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/jquery.animateNumber.min.js"></script>
+    <script src="/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="/js/google-map.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
