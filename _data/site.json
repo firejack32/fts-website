@@ -1,0 +1,78 @@
+{
+  "company": {
+    "name": "Fire Team Security",
+    "email": "Info@FireTeamSecurity.com",
+    "phone": "888.446.7416",
+    "afterHoursPhone": "800.299.9900",
+    "serviceRequestEmail": "cheris@fireteamsecurity.com",
+    "tagline": "Stronger Systems & Safer Spaces"
+  },
+  "homepage": {
+    "slides": [
+      {
+        "title": "Powerful Technologies for Video and Access Control",
+        "subtitle": "",
+        "buttonText": "Learn More",
+        "buttonLink": "https://www.avigilon.com/analytics",
+        "backgroundImage": "images/sd.jpg"
+      },
+      {
+        "title": "Record. Respond. Protect.",
+        "subtitle": "",
+        "buttonText": "Learn More",
+        "buttonLink": "https://assets.avigilon.com/file_library/pdf/integrations/Motorola%20Solutions%20VT100%20Brochure.pdf",
+        "backgroundImage": "images/bc.png"
+      },
+      {
+        "title": "Experts in Commercial Security and Fire Systems",
+        "subtitle": "Welcome to Fire Team Security",
+        "buttonText": "Our Services",
+        "buttonLink": "services",
+        "backgroundImage": "images/bg_2.jpg"
+      },
+      {
+        "title": "Protecting our Customers",
+        "subtitle": "Don't settle for less",
+        "buttonText": "Our Services",
+        "buttonLink": "services",
+        "backgroundImage": "images/lens1.jpeg"
+      }
+    ],
+    "aboutSection": {
+      "heading": "FTS",
+      "description": "Fire Team Security, Inc. is a full service system integrator.",
+      "subtext": "Please consult a Sales Representative for details."
+    },
+    "servicesHeading": "Our Security Services",
+    "servicesSubtext": "As a full service Security Integrator, here are a few of our areas of expertise.",
+    "services": [
+      {
+        "name": "Video Surveillance",
+        "brands": "Avigilon | AVA"
+      },
+      {
+        "name": "Access Control",
+        "brands": "Avigilon | Open Path | Salto"
+      },
+      {
+        "name": "Fire Alarm Systems",
+        "brands": "Siemens | Firelite | Silent Knight | AES"
+      },
+      {
+        "name": "Intrusion Security",
+        "brands": "DMP | Bosch"
+      }
+    ],
+    "bannerText": "You Always Get the Best Results",
+    "stats": [
+      { "number": 3654, "label": "Projects Completed" },
+      { "number": 1282, "label": "Satisfied Customer" },
+      { "number": 57, "label": "Licenses Held" },
+      { "number": 35, "label": "Years of Experienced" }
+    ],
+    "quoteSection": {
+      "heading": "Request a Quote",
+      "description": "Fill out the information below and a representative from Fire Team Security will get back with you shortly."
+    }
+  }
+}

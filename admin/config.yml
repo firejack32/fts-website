@@ -6,47 +6,75 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Site Pages"
+  - name: "settings"
+    label: "Site Settings"
     files:
-      - name: "home"
-        label: "Home Page"
-        file: "index.html"
+      - name: "general"
+        label: "Company Info & Home Page"
+        file: "_data/site.json"
         fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          # ── Company Info ──
+          - label: "Company Info"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "After Hours Phone", name: "afterHoursPhone", widget: "string" }
+              - { label: "Service Request Email", name: "serviceRequestEmail", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
 
-      - name: "about"
-        label: "About Page"
-        file: "about.html"
-        fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          # ── Home Page ──
+          - label: "Home Page"
+            name: "homepage"
+            widget: "object"
+            fields:
+              # Slider
+              - label: "Hero Slides"
+                name: "slides"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+                  - { label: "Button Text", name: "buttonText", widget: "string" }
+                  - { label: "Button Link", name: "buttonLink", widget: "string" }
+                  - { label: "Background Image", name: "backgroundImage", widget: "image" }
 
-      - name: "services"
-        label: "Services Page"
-        file: "services.html"
-        fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+              # About box
+              - label: "About Section"
+                name: "aboutSection"
+                widget: "object"
+                fields:
+                  - { label: "Heading", name: "heading", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Subtext", name: "subtext", widget: "string" }
 
-      - name: "contact"
-        label: "Contact Page"
-        file: "contact.html"
-        fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+              # Services
+              - { label: "Services Heading", name: "servicesHeading", widget: "string" }
+              - { label: "Services Subtext", name: "servicesSubtext", widget: "string" }
+              - label: "Services List"
+                name: "services"
+                widget: "list"
+                fields:
+                  - { label: "Service Name", name: "name", widget: "string" }
+                  - { label: "Brands", name: "brands", widget: "string" }
 
-      - name: "careers"
-        label: "Careers Page"
-        file: "careers.html"
-        fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+              # Banner
+              - { label: "Banner Text", name: "bannerText", widget: "string" }
 
-      - name: "finance"
-        label: "Finance Page"
-        file: "finance.html"
-        fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+              # Stats
+              - label: "Stats Counters"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "number" }
+                  - { label: "Label", name: "label", widget: "string" }
 
-      - name: "projects"
-        label: "Projects Page"
-        file: "project.html"
-        fields:
-          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
+              # Quote section
+              - label: "Quote Section"
+                name: "quoteSection"
+                widget: "object"
+                fields:
+                  - { label: "Heading", name: "heading", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
