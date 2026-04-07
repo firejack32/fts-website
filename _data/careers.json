@@ -12,14 +12,24 @@
       "applicationUrl": "https://www.indeed.com/viewjob?jk=abc123"
     },
     {
-      "title": "Fire/Security Apprentice",
-      "description": "Interested in getting started in the security industry? Check out the link below for more information.",
-      "image": "/images/tech1.jpg",
+      "title": "Pizza Man 1",
+      "description": "He delivers pizza just in case if Jack runs out of any.",
+      "image": "/images/access.jpg",
       "postedMonth": "September",
       "postedDay": "25",
       "postedYear": "2023",
       "buttonText": "Apply Here",
       "applicationUrl": "https://www.indeed.com/viewjob?jk=def456"
+    },
+    {
+      "title": "Pizza Man 2",
+      "description": "This is the back up pizza man just in case the first one doesn't work out.",
+      "image": "/images/pizza_man_-film-.jpg",
+      "postedMonth": "April",
+      "postedDay": "7",
+      "postedYear": "2026",
+      "buttonText": "Apply Here",
+      "applicationUrl": "https://www.papajohns.com/?utm_source=GOOGLE&utm_medium=cpc&utm_campaign=Carat_NAT_Brand_Brand-Alone_Search_Google_CNVR_HighPriority_EXM-BM_ENG&utm_content=EVERGREEN&utm_keyword=papa+johns&gclsrc=aw.ds&gad_source=1&gad_campaignid=15861325645&gbraid=0AAAAADrD7YtqTkvDMAzBakfrMplK42I60&gclid=CjwKCAjw1tLOBhAMEiwAiPkRHgu-fWTUnAtz6Cx3lWTXiMb4iWwPPACt4iYbBqsmdvyYn1AALydcthoC5UUQAvD_BwE"
     }
   ]
 }
