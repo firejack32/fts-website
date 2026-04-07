@@ -1,0 +1,25 @@
+{
+  "heroTitle": "Careers",
+  "jobs": [
+    {
+      "title": "Fire Alarm Lead Technician",
+      "description": "Want to join our awesome team? Check out the link below for more information.",
+      "image": "images/tech.jpg",
+      "postedMonth": "September",
+      "postedDay": "25",
+      "postedYear": "2023",
+      "buttonText": "Apply Here",
+      "applicationUrl": "https://www.indeed.com/viewjob?jk=abc123"
+    },
+    {
+      "title": "Fire/Security Apprentice",
+      "description": "Interested in getting started in the security industry? Check out the link below for more information.",
+      "image": "images/tech1.jpg",
+      "postedMonth": "September",
+      "postedDay": "25",
+      "postedYear": "2023",
+      "buttonText": "Apply Here",
+      "applicationUrl": "https://www.indeed.com/viewjob?jk=def456"
+    }
+  ]
+}

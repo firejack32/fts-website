@@ -1,0 +1,22 @@
+{
+  "heroTitle": "Financing",
+  "partnerName": "GreatAmerica Financial Services",
+  "partnerDescription": "GreatAmerica has been a proven trusted financial resource of Fire Team Security. Click the link below for more information on GreatAmerica.",
+  "partnerButtonText": "About GreatAmerica",
+  "partnerButtonUrl": "https://www.greatamerica.com/about",
+  "mainHeading": "Financing with Fire Team Security",
+  "mainIntro": "Fire Team Security has joined GreatAmerica Financial Services to offer financing options. Financing offers organizations numerous benefits. Here are a few of the benefits.",
+  "benefits": [
+    { "title": "Conserve Your Cash", "description": "Preserve your organization's capital and bank lines for strategic investments." },
+    { "title": "Manage Your Budget", "description": "Low monthly payments make it easy to plan and forecast expenses." },
+    { "title": "Get New Technology Now", "description": "Don't wait — get the security solution your organization needs today." },
+    { "title": "Guard Against Inflation", "description": "Lock in today's pricing with fixed monthly payments." },
+    { "title": "Customize to Fit Your Vision", "description": "Flexible terms and structures to match your organization's needs." },
+    { "title": "Bundle Everything as One", "description": "Combine equipment, installation, and service into a single monthly payment." }
+  ],
+  "detailHeading": "GreatAmerica",
+  "detailDescription": "GreatAmerica Financial Services was founded in 1990. Through Fire Team Security's relationship with GreatAmerica, we can offer our clients an option for getting the security solution they need today. For more information on financing, or to get started today, click the button below.",
+  "detailButtonText": "Get Started",
+  "detailButtonEmail": "sales@fireteamsecurity.com",
+  "bottomBannerText": "Reach Out to Your FTS Rep for More Information"
+}

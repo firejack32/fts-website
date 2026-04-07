@@ -13,7 +13,6 @@ collections:
         label: "Company Info & Home Page"
         file: "_data/site.json"
         fields:
-          # ── Company Info ──
           - label: "Company Info"
             name: "company"
             widget: "object"
@@ -24,13 +23,10 @@ collections:
               - { label: "After Hours Phone", name: "afterHoursPhone", widget: "string" }
               - { label: "Service Request Email", name: "serviceRequestEmail", widget: "string" }
               - { label: "Tagline", name: "tagline", widget: "string" }
-
-          # ── Home Page ──
           - label: "Home Page"
             name: "homepage"
             widget: "object"
             fields:
-              # Slider
               - label: "Hero Slides"
                 name: "slides"
                 widget: "list"
@@ -40,8 +36,6 @@ collections:
                   - { label: "Button Text", name: "buttonText", widget: "string" }
                   - { label: "Button Link", name: "buttonLink", widget: "string" }
                   - { label: "Background Image", name: "backgroundImage", widget: "image" }
-
-              # About box
               - label: "About Section"
                 name: "aboutSection"
                 widget: "object"
@@ -49,8 +43,6 @@ collections:
                   - { label: "Heading", name: "heading", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
                   - { label: "Subtext", name: "subtext", widget: "string" }
-
-              # Services
               - { label: "Services Heading", name: "servicesHeading", widget: "string" }
               - { label: "Services Subtext", name: "servicesSubtext", widget: "string" }
               - label: "Services List"
@@ -59,22 +51,130 @@ collections:
                 fields:
                   - { label: "Service Name", name: "name", widget: "string" }
                   - { label: "Brands", name: "brands", widget: "string" }
-
-              # Banner
               - { label: "Banner Text", name: "bannerText", widget: "string" }
-
-              # Stats
               - label: "Stats Counters"
                 name: "stats"
                 widget: "list"
                 fields:
                   - { label: "Number", name: "number", widget: "number" }
                   - { label: "Label", name: "label", widget: "string" }
-
-              # Quote section
               - label: "Quote Section"
                 name: "quoteSection"
                 widget: "object"
                 fields:
                   - { label: "Heading", name: "heading", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      # ── About Page ──
+      - name: "about"
+        label: "About Page"
+        file: "_data/about.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Welcome Heading", name: "welcomeHeading", widget: "string" }
+          - { label: "Welcome Paragraph 1", name: "welcomeParagraph1", widget: "text" }
+          - { label: "Welcome Paragraph 2", name: "welcomeParagraph2", widget: "text" }
+          - { label: "Welcome Paragraph 3", name: "welcomeParagraph3", widget: "text" }
+          - { label: "Integrator Heading", name: "integratorHeading", widget: "string" }
+          - { label: "Integrator Description", name: "integratorDescription", widget: "text" }
+          - { label: "Banner Text", name: "bannerText", widget: "string" }
+
+      # ── Services Page ──
+      - name: "services"
+        label: "Services Page"
+        file: "_data/services.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - { label: "Partnerships Heading", name: "partnershipsHeading", widget: "string" }
+          - { label: "Partnerships Intro", name: "partnershipsIntro", widget: "string" }
+          - label: "Partners"
+            name: "partners"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Website URL", name: "url", widget: "string" }
+              - { label: "Logo Image", name: "image", widget: "image" }
+
+      # ── Contact Page ──
+      - name: "contact"
+        label: "Contact Page"
+        file: "_data/contact.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Office Address 1", name: "address1", widget: "string" }
+          - { label: "Office Address 2", name: "address2", widget: "string" }
+          - { label: "Business Phone", name: "businessPhone", widget: "string" }
+          - { label: "After Hours Phone", name: "afterHoursPhone", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Form Heading", name: "formHeading", widget: "string" }
+          - { label: "Form Email Recipient", name: "formEmail", widget: "string" }
+
+      # ── Careers Page ──
+      - name: "careers"
+        label: "Careers Page"
+        file: "_data/careers.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - label: "Job Listings"
+            name: "jobs"
+            widget: "list"
+            fields:
+              - { label: "Job Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Posted Month", name: "postedMonth", widget: "string" }
+              - { label: "Posted Day", name: "postedDay", widget: "string" }
+              - { label: "Posted Year", name: "postedYear", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Application URL", name: "applicationUrl", widget: "string" }
+
+      # ── Finance Page ──
+      - name: "finance"
+        label: "Finance Page"
+        file: "_data/finance.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Partner Name", name: "partnerName", widget: "string" }
+          - { label: "Partner Description", name: "partnerDescription", widget: "text" }
+          - { label: "Partner Button Text", name: "partnerButtonText", widget: "string" }
+          - { label: "Partner Button URL", name: "partnerButtonUrl", widget: "string" }
+          - { label: "Main Heading", name: "mainHeading", widget: "string" }
+          - { label: "Main Intro", name: "mainIntro", widget: "text" }
+          - label: "Benefits"
+            name: "benefits"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - { label: "Detail Heading", name: "detailHeading", widget: "string" }
+          - { label: "Detail Description", name: "detailDescription", widget: "text" }
+          - { label: "Detail Button Text", name: "detailButtonText", widget: "string" }
+          - { label: "Detail Button Email", name: "detailButtonEmail", widget: "string" }
+          - { label: "Bottom Banner Text", name: "bottomBannerText", widget: "string" }
+
+      # ── Projects Page ──
+      - name: "projects"
+        label: "Projects Page"
+        file: "_data/projects.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Project Name", name: "name", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Link (leave empty if no page)", name: "link", widget: "string", required: false }

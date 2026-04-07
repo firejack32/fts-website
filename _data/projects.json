@@ -1,0 +1,23 @@
+{
+  "heroTitle": "Projects",
+  "projects": [
+    {
+      "name": "Rocky Mountain Metro Airport",
+      "subtitle": "Click to Learn More",
+      "image": "images/rmm.jpg",
+      "link": "project-rma"
+    },
+    {
+      "name": "Grand Junction FCU",
+      "subtitle": "Case Study Coming Soon",
+      "image": "images/gj3.png",
+      "link": ""
+    },
+    {
+      "name": "Western Slope Auto",
+      "subtitle": "Case Study Coming Soon",
+      "image": "images/ws.jpg",
+      "link": ""
+    }
+  ]
+}
