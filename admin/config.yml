@@ -2,52 +2,54 @@ backend:
   name: github
   repo: FireJack32/fts-website
   branch: main
+  auth_type: pkce
+  app_id: Ov23li09lMtKAGS2SQxS
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
   - name: "pages"
-    label: "Pages"
+    label: "Site Pages"
     files:
       - name: "home"
         label: "Home Page"
         file: "index.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
 
       - name: "about"
         label: "About Page"
         file: "about.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
 
       - name: "services"
         label: "Services Page"
         file: "services.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
 
       - name: "contact"
         label: "Contact Page"
         file: "contact.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
 
       - name: "careers"
         label: "Careers Page"
         file: "careers.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
 
       - name: "finance"
         label: "Finance Page"
         file: "finance.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
 
       - name: "projects"
         label: "Projects Page"
         file: "project.html"
         fields:
-          - { label: "Body", name: "body", widget: "code", default_language: "html", output_code_only: true }
+          - { label: "Page Content", name: "body", widget: "code", default_language: "html", output_code_only: true }
